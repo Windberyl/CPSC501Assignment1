@@ -5,8 +5,8 @@ public class Main {
 		Panda jubby = new Panda("jubby", 10, 10);
 		Bamboo stick = new Bamboo("stick", 0, 10);
 		
-		location.setLiving(jubby, jubby.A(), jubby.getYCoord());
-		location.setLiving(stick, stick.A(), stick.getYCoord());
+		location.setLiving(jubby, jubby.getXCoord(), jubby.getYCoord());
+		location.setLiving(stick, stick.getXCoord(), stick.getYCoord());
 		
 		eats(jubby, stick);
 		

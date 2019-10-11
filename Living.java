@@ -30,7 +30,7 @@ public class Living {
 		this.ycoord = ycoord;
 	}
 	
-	protected int A()
+	protected int getXCoord()
 	{
 		return xcoord;
 	}
