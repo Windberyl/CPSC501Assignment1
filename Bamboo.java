@@ -16,8 +16,7 @@ public class Bamboo extends Plant{
 		Bamboo.population = population;
 	}
 	
-	public static void grow()
-	{
-		
-	}
+	//public static void grow()
+	//{
+	//}
 }

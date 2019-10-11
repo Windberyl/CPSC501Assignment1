@@ -22,6 +22,7 @@ public class Panda extends Animal{
 		setXCoord(xcoord);
 		setYCoord(ycoord);
 	}
-	public void hibernate() {
-	}
+	//public void hibernate()
+	//{
+	//}
 }
