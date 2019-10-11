@@ -85,7 +85,7 @@ class Tests {
 		Living animal = new Living("animal", xcoord, ycoord);
 		Location location = new Location(100);
 		
-		location.setLiving(animal, xcoord, ycoord);
+		location.setLiving(animal);
 		
 		assertEquals(location.getLiving(xcoord, ycoord), animal);
 	}

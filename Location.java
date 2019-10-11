@@ -8,8 +8,10 @@ public class Location {
 		location = new Living[size][size];
 	}
 	
-	public void setLiving(Living living, int xcoord, int ycoord)
+	public void setLiving(Living living)
 	{
+		int xcoord = living.getXCoord();
+		int ycoord = living.getYCoord();
 		location[xcoord][ycoord] = living;
 	}
 	
