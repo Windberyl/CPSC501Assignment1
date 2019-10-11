@@ -16,13 +16,4 @@ public class Panda extends Animal{
 	{
 		Panda.population = population;
 	}
-
-	public void run(int xcoord, int ycoord)
-	{
-		setXCoord(xcoord);
-		setYCoord(ycoord);
-	}
-	//public void hibernate()
-	//{
-	//}
 }

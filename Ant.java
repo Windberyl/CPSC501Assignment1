@@ -16,11 +16,4 @@ public class Ant extends Animal{
 	{
 		Ant.population = population;
 	}
-
-	public void run(int xcoord, int ycoord)
-	{
-		setXCoord(xcoord);
-		setYCoord(ycoord);
-	}
-
 }

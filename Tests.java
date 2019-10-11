@@ -68,22 +68,13 @@ class Tests {
 		assertEquals(animal.getEnergy(), 20);
 	}
 	
-	void testPandaRun()
+	void testAnimalRun()
 	{
-		Panda panda = new Panda(null, 0, 0 );
+		Animal animal = new Panda(null, 0, 0 );
 		
-		panda.run(50, 50);
-		assertEquals(panda.getYCoord(), 50);
-		assertEquals(panda.getXCoord(), 50);
-	}
-	
-	void testAntRun()
-	{
-		Ant ant = new Ant(null, 0, 0 );
-		
-		ant.run(50, 50);
-		assertEquals(ant.getYCoord(), 50);
-		assertEquals(ant.getXCoord(), 50);
+		animal.run(50, 50);
+		assertEquals(animal.getYCoord(), 50);
+		assertEquals(animal.getXCoord(), 50);
 	}
 	
 	void testLocationSetGetLiving()
