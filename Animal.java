@@ -10,4 +10,9 @@ public class Animal extends Living{
 	//public void hibernate()
 	//{
 	//}
+
+	public void eats(Living food) {
+		int init = this.getEnergy();
+		this.setEnergy(food.getEnergy() + init);
+	}
 }

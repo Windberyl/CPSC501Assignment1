@@ -8,12 +8,8 @@ public class Main {
 		location.setLiving(jubby);
 		location.setLiving(stick);
 		
-		eats(jubby, stick);
+		jubby.eats(stick);
 		
 		System.out.println(location);
-	}
-	public static void eats(Living object1, Living object2)
-	{
-		object1.setEnergy(object2.getEnergy() + object1.getEnergy());
 	}
 }

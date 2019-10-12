@@ -7,7 +7,7 @@ class Tests {
 
 	@Test
 	void testMainEat() {
-		Living animal = new Living();
+		Animal animal = new Animal(null, 0, 0);
 		Living plant = new Living();
 		
 		animal.energy = 23;
@@ -15,11 +15,12 @@ class Tests {
 		
 		int sum = animal.energy + plant.energy;
 		
-		Main.eats(animal, plant);
+		animal.eats(plant);
 		
 		assertEquals(animal.energy, sum);
 	}
 	
+	@Test
 	void testLivingSetXCoord()
 	{
 		Living animal = new Living();
@@ -28,6 +29,7 @@ class Tests {
 		assertEquals(animal.xcoord, 20);
 	}
 	
+	@Test
 	void testLivingSetYCoord()
 	{
 		Living animal = new Living();
@@ -36,6 +38,7 @@ class Tests {
 		assertEquals(animal.ycoord, 20);
 	}
 	
+	@Test
 	void testLivingGetYCoord()
 	{
 		Living animal = new Living();
@@ -44,6 +47,7 @@ class Tests {
 		assertEquals(animal.getYCoord(), 20);
 	}
 	
+	@Test
 	void testLivingGetXCoord()
 	{
 		Living animal = new Living();
@@ -52,6 +56,7 @@ class Tests {
 		assertEquals(animal.getXCoord(), 20);
 	}
 	
+	@Test
 	void testLivingSetEnergy()
 	{
 		Living animal = new Living();
@@ -60,6 +65,7 @@ class Tests {
 		assertEquals(animal.energy, 20);
 	}
 	
+	@Test
 	void testLivingGetEnergy()
 	{
 		Living animal = new Living();
@@ -68,6 +74,7 @@ class Tests {
 		assertEquals(animal.getEnergy(), 20);
 	}
 	
+	@Test
 	void testAnimalRun()
 	{
 		Animal animal = new Panda(null, 0, 0 );
@@ -77,6 +84,7 @@ class Tests {
 		assertEquals(animal.getXCoord(), 50);
 	}
 	
+	@Test
 	void testLocationSetGetLiving()
 	{
 		int xcoord = 52;
